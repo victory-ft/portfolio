@@ -1,0 +1,123 @@
+@import "./variables";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 8%;
+}
+
+@font-face {
+  font-family: "Bai";
+  src: url(../assets/fonts/BaiJamjuree-Regular.ttf) format("opentype");
+}
+
+// @font-face {
+//   font-family: "Chivo";
+//   src: url(../assets/fonts/Chivo-Black.ttf) format("opentype");
+// }
+
+@font-face {
+  font-family: "Chivo";
+  src: url(../assets/fonts/Chivo-VariableFont.ttf) format("opentype");
+}
+
+body {
+  font-family: "Bai";
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+  color: $text;
+  transition: background-color 0.5s ease-in-out;
+
+  &:has(.container.dark) {
+    background-color: $background-dark;
+    color: $text-dark;
+
+    .secondary-header {
+      color: $text-dark;
+    }
+  }
+
+  scrollbar-color: $background rgb(0 0 0 / 40%);
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: inherit;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $accent-dark;
+    border-radius: 20px;
+  }
+}
+
+.container {
+  background-color: $background;
+  color: $text;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.container.dark {
+  background-color: $background-dark;
+  color: $text-dark;
+
+  .secondary-header {
+    color: $text-dark;
+  }
+}
+
+// * {
+//   outline: 2px solid green;
+// }
+
+section {
+  min-height: 55dvh;
+  padding: 5rem 12rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  max-width: 90rem;
+}
+
+// .section-content-half {
+//   height: 100%;
+// }
+
+h1 {
+  font-family: "Chivo";
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+.secondary-header {
+  color: $text-tertiary;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+  section {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 980px) {
+  section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  section {
+    padding: 1rem;
+  }
+}
