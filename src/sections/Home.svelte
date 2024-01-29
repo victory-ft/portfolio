@@ -28,8 +28,8 @@
 	<div class="section-content-half">
 		<h1 class="main-header">VICTORY FATOYINBO</h1>
 		<p class="intro-text">
-			A web developer, passionate about creating stunning websites using vanilla
-			JavaScript, React or Svelte, with experience in using Node, Express &
+			A web & mobile developer, passionate about creating stunning products using
+			JavaScript, React, React Native and other frameworks, with experience in using Node, Express &
 			MongoDB to create fast and efficient backend applications.
 		</p>
 	</div>

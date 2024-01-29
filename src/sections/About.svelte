@@ -51,15 +51,13 @@
 	<div class="section-content-half"><h1>About Me</h1></div>
 	<div class="section-content-half about-half">
 		<p>
-			Hey, my name is Victory Fatoyinbo. I'm a web developer. Lorem ipsum dolor
-			sit, amet consectetur adipisicing elit. Impedit nemo, suscipit est iusto
-			consequatur ab unde ut odio nihil.
+			While I was in secondary school, I realized that I had a passion for creating products that people can use and find value in, and I expressed this passion using the web. I learned how to use HTML, CSS, and JavaScript to build interactive and responsive websites. This prompted me to further my knowledge by studying software engineering in the university, where i obtained a Bachelor's degree. 
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quibusdam
-			aliquid atque expedita quam laboriosam error at. Pariatur, obcaecati!
-			Architecto pariatur libero ducimus odit animi maxime esse culpa ipsam
-			voluptates?
+			Later, I expanded my skills by learning various web frameworks, including React and Svelte, as well as to mobile development, using React Native to create cross-platform apps all with the aim of creating more dynamic and engaging web and mobile applications. I'm always eager to learn new things and improve my skills.
+		</p>
+		<p>
+			 I'm interested in exploring new technologies and frameworks, such as GraphQL, Tailwind CSS, and more. I'm also open to collaborating with other developers and working on exciting projects.
 		</p>
 		<button type="submit">Download CV</button>
 	</div>
