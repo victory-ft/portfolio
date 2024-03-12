@@ -59,7 +59,7 @@
 		<p>
 			 I'm interested in exploring new technologies and frameworks, such as GraphQL, Tailwind CSS, and more. I'm also open to collaborating with other developers and working on exciting projects.
 		</p>
-		<button type="submit">Download CV</button>
+		<a href="/files/victory-cv.pdf" target="_blank" class="cv-button">View CV</a>
 	</div>
 </section>
 <div
@@ -113,7 +113,8 @@
 	@use "sass:math";
 	@import "../styles/variables";
 
-	button {
+	.cv-button {
+		text-decoration: none;
 		font-family: "Bai";
 		padding: 15px 20px;
 		border-radius: 5px;

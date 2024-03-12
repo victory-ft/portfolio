@@ -56,6 +56,7 @@
 			</p>
 			<span class="tech-used-container">
 				<p class="tech-used">ReactJS</p>
+				<p class="tech-used">TypeScript</p>
 				<!-- <p class="tech-used">Express</p> -->
 				<!-- <p class="tech-used">Node</p> -->
 			</span>
@@ -168,7 +169,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		padding: 0px 0px 20px;
+		padding: 0px 0px 5px;
 		min-height: 200px;
 		background-color: $secondary;
 		transition: background-color 0.4s ease-in-out;
@@ -221,7 +222,7 @@
 
 	.project-description {
 		font-size: 1rem;
-		margin: 0px 15px;
+		margin: 0px 15px 10px;
 	}
 
 	.view-site {
