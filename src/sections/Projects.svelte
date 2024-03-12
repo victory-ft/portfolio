@@ -100,7 +100,7 @@
 			</span>
 			<a href="https://bucodel-sis.netlify.app/" target="_blank" class="view-site"><img src={goArrow} alt="view site" /></a>
 		</div>
-		<div class="project">
+		<!-- <div class="project">
 			<img src="assets/images/test3.jpg" alt="project" />
 			<h2 class="project-topic">Portfolio</h2>
 			<p class="project-description">
@@ -111,7 +111,7 @@
 				<p class="tech-used">TypeScript</p>
 			</span>
 			<button class="view-site"><img src={goArrow} alt="view site" /></button>
-		</div>
+		</div> -->
 	</div>
 </div>
 

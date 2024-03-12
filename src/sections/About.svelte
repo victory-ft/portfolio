@@ -59,6 +59,7 @@
 		<p>
 			 I'm interested in exploring new technologies and frameworks, such as GraphQL, Tailwind CSS, and more. I'm also open to collaborating with other developers and working on exciting projects.
 		</p>
+		<br>
 		<a href="/files/victory-cv.pdf" target="_blank" class="cv-button">View CV</a>
 	</div>
 </section>
