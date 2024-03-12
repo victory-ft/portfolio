@@ -33,46 +33,46 @@
 	<h1>Projects</h1>
 	<div class="projects-container">
 		<div class="project">
-			<img src="assets/images/test1.webp" alt="project" />
-			<h2 class="project-topic">Restaurant Website</h2>
+			<img src="assets/images/siwes-web.png" alt="project" />
+			<h2 class="project-topic">SIWES Website</h2>
 			<p class="project-description">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, ad quasi
-				possimus vero fugiat nobis?
+				Developed the frontend of the website for Babcock University&#39;s SIWES
+				program, used to monitor students during their IT.
 			</p>
+			<!-- The website is built with various features for students, supervisors, and the university. -->
 			<span class="tech-used-container">
-				<p class="tech-used">React</p>
+				<p class="tech-used">ReactJS</p>
 			</span>
-			<button class="view-site"><img src={goArrow} alt="view site" /></button>
+			<a href="https://siwes.babcock.edu.ng" target="_blank" class="view-site"
+				><img src={goArrow} alt="view site" /></a
+			>
 		</div>
 		<div class="project">
-			<img src="assets/images/test2.webp" alt="project" />
-			<h2 class="project-topic">Yoga Web App</h2>
+			<img src="assets/images/otmovies.png" alt="project" />
+			<h2 class="project-topic">Movie Finder</h2>
 			<p class="project-description">
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cumque
-				voluptatum ipsum corporis, sed vero.
+				Website developed using ReactJs to discover, search and find information
+				on Movies and TV Shows.
 			</p>
 			<span class="tech-used-container">
-				<p class="tech-used">React</p>
-				<p class="tech-used">Express</p>
-				<p class="tech-used">Node</p>
+				<p class="tech-used">ReactJS</p>
+				<!-- <p class="tech-used">Express</p> -->
+				<!-- <p class="tech-used">Node</p> -->
 			</span>
-			<button class="view-site"><img src={goArrow} alt="view site" /></button>
+			<a href="https://ot-movies.vercel.app" target="_blank" class="view-site"
+				><img src={goArrow} alt="view site" /></a
+			>
 		</div>
 		<div class="project">
-			<img src="assets/images/test3.jpg" alt="project" />
-			<h2 class="project-topic">Crypto Wallet</h2>
-			<p class="project-description">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-				veritatis quisquam corrupti nihil, inventore vitae.
-			</p>
+			<img src="assets/images/portfolio.png" alt="project" />
+			<h2 class="project-topic">Portfolio</h2>
+			<p class="project-description">The Website you're on right now.🙂</p>
 			<span class="tech-used-container">
-				<p class="tech-used">HTML</p>
-				<p class="tech-used">CSS</p>
-				<p class="tech-used">JavaScript</p>
+				<p class="tech-used">SvelteJS</p>
 			</span>
-			<button class="view-site"><img src={goArrow} alt="view site" /></button>
+			<a href="#home" class="view-site"><img src={goArrow} alt="view site" /></a>
 		</div>
-		<div class="project">
+		<!-- <div class="project">
 			<img src="assets/images/test1.webp" alt="project" />
 			<h2 class="project-topic">Fast Food Web App</h2>
 			<p class="project-description">
@@ -84,21 +84,20 @@
 				<p class="tech-used">Svelte</p>
 			</span>
 			<button class="view-site"><img src={goArrow} alt="view site" /></button>
-		</div>
+		</div> -->
 		<div class="project">
-			<img src="assets/images/test2.webp" alt="project" />
-			<h2 class="project-topic">Project Card Maker</h2>
+			<img src="assets/images/bucodel.png" alt="project" />
+			<h2 class="project-topic">BUCODeL SIS</h2>
 			<p class="project-description">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-				perspiciatis accusantium, minima unde tempore laborum nesciunt delectus
-				amet.
+				Student Information System for Babcock University's e-Learning program.
+				Developed as a final year project for my Bsc.
 			</p>
 			<span class="tech-used-container">
-				<p class="tech-used">React</p>
-				<p class="tech-used">Express</p>
+				<p class="tech-used">ReactJs</p>
+				<p class="tech-used">ExpressJS</p>
 				<p class="tech-used">MongoDB</p>
 			</span>
-			<button class="view-site"><img src={goArrow} alt="view site" /></button>
+			<a href="https://bucodel-sis.netlify.app/" target="_blank" class="view-site"><img src={goArrow} alt="view site" /></a>
 		</div>
 		<div class="project">
 			<img src="assets/images/test3.jpg" alt="project" />
@@ -230,7 +229,7 @@
 		border: none;
 		position: absolute;
 		right: 5%;
-		top: 45%;
+		top: 40%;
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
