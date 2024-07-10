@@ -57,7 +57,7 @@
 			software engineering at university, where I earned a Bachelor's degree.
 			Later, I expanded into web frameworks like React and Svelte, and ventured
 			into mobile development using React Native. I'm constantly eager to learn
-			and enhance my abilities. 🌟
+			and enhance my abilities.🌟
 		</p>
 
 		<br />

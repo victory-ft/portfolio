@@ -131,7 +131,8 @@
 
 	.show {
 		h1,
-		.project {
+		.project,
+		.project-btn-container {
 			translate: 0;
 			opacity: 1;
 		}
@@ -145,6 +146,12 @@
 		width: fit-content;
 		margin: 0 auto 20px;
 		padding: 0;
+		position: relative;
+		translate: -100%;
+		opacity: 0;
+		transition:
+			translate 0.8s,
+			opacity 0.8s;
 	}
 
 	.project-btn {
