@@ -51,18 +51,24 @@
 	<div class="projects-container" bind:this={ref}>
 		<div class="project-inner-container">
 			<div class="project">
-				<img src="assets/images/siwes-web.png" alt="project" />
-				<h2 class="project-topic">SIWES Website</h2>
+				<img src="assets/images/kangol.png" alt="project" />
+				<h2 class="project-topic">Kangol Store</h2>
 				<p class="project-description">
-					Developed the frontend of the website for Babcock University&#39;s
-					SIWES program, used to monitor students during their IT.
+					A redesign of the Kangol store website, using NextJS with a backend
+					which connects to a MongoDB Database, which has a limited number of
+					products for demonstration. Design gotten <a
+						href="https://www.behance.net/gallery/113457767/Kangol-Website-E-commerce"
+						target="_blank"
+					>
+						here
+					</a>
 				</p>
-				<!-- The website is built with various features for students, supervisors, and the university. -->
 				<span class="tech-used-container">
-					<p class="tech-used">ReactJS</p>
+					<p class="tech-used">NextJS</p>
+					<p class="tech-used">MongoDB</p>
 				</span>
 				<a
-					href="https://siwes.babcock.edu.ng"
+					href="https://kangol-store.vercel.app"
 					target="_blank"
 					class="view-site"
 				>
@@ -115,6 +121,25 @@
 				</span>
 				<a
 					href="https://bucodel-sis.netlify.app/"
+					target="_blank"
+					class="view-site"
+				>
+					<img src={goArrow} alt="view site" />
+				</a>
+			</div>
+			<div class="project">
+				<img src="assets/images/siwes-web.png" alt="project" />
+				<h2 class="project-topic">SIWES Website</h2>
+				<p class="project-description">
+					Developed the frontend of the website for Babcock University&#39;s
+					SIWES program, used to monitor students during their IT.
+				</p>
+				<!-- The website is built with various features for students, supervisors, and the university. -->
+				<span class="tech-used-container">
+					<p class="tech-used">ReactJS</p>
+				</span>
+				<a
+					href="https://siwes.babcock.edu.ng"
 					target="_blank"
 					class="view-site"
 				>
@@ -314,7 +339,7 @@
 	@media (max-width: 550px) {
 		.project {
 			width: 300px;
-			height: 350px;
+			height: 400px;
 
 			img {
 				width: 300px;
