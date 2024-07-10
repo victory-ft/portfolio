@@ -51,25 +51,15 @@
 	<div class="section-content-half"><h1>About Me</h1></div>
 	<div class="section-content-half about-half">
 		<p>
-			While I was in secondary school, I realized that I had a passion for
-			creating products that people can use and find value in, and I expressed
-			this passion using the web. I learned how to use HTML, CSS, and JavaScript
-			to build interactive and responsive websites. This prompted me to further
-			my knowledge by studying software engineering in the university, where i
-			obtained a Bachelor's degree.
+			In my secondary school, I discovered my passion for creating products for
+			people through web development. I honed my skills in HTML, CSS, and
+			JavaScript, building interactive websites. My enthusiasm led me to pursue
+			software engineering at university, where I earned a Bachelor's degree.
+			Later, I expanded into web frameworks like React and Svelte, and ventured
+			into mobile development using React Native. I'm constantly eager to learn
+			and enhance my abilities. 🌟
 		</p>
-		<p>
-			Later, I expanded my skills by learning various web frameworks, including
-			React and Svelte, as well as to mobile development, using React Native to
-			create cross-platform apps all with the aim of creating more dynamic and
-			engaging web and mobile applications. I'm always eager to learn new things
-			and improve my skills.
-		</p>
-		<p>
-			I'm interested in exploring new technologies and frameworks, such as
-			GraphQL, Tailwind CSS, and more. I'm also open to collaborating with other
-			developers and working on exciting projects.
-		</p>
+
 		<br />
 		<a href="/files/victory-cv.pdf" target="_blank" class="cv-button">
 			View CV
@@ -102,7 +92,7 @@
 		</div>
 		<div class="skill-card">
 			<img src={react} alt="react-icon" />
-			<p>React</p>
+			<p>React/Next</p>
 		</div>
 		<div class="skill-card">
 			<img src={svelteIcon} alt="svelte-icon" class="sv-icon" />

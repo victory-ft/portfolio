@@ -1,14 +1,19 @@
-<script lang="ts">
+<script>
 	import { onMount } from "svelte";
 	import { section, theme } from "../stores/Settings";
+	import emailjs from "@emailjs/browser";
 	import twitter from "../assets/icons/twitter-x.svg";
 	import telegram from "../assets/icons/telegram.svg";
-	import email from "../assets/icons/mail-send.svg";
+	import emailIcon from "../assets/icons/mail-send.svg";
 	import whatsapp from "../assets/icons/whatsapp.svg";
 
 	let contact,
-		isIntersecting: Boolean = false;
+		isIntersecting = false;
 	let container = document.getElementById("contact");
+	let firstName, lastName, email, subject, message;
+	let loading = false;
+	let fail = false;
+	let success = false;
 
 	onMount(() => {
 		const observer = new IntersectionObserver(
@@ -26,6 +31,51 @@
 		observer.observe(contact);
 		return () => observer.disconnect();
 	});
+
+	const submitForm = () => {
+		loading = true;
+		emailjs.init({
+			publicKey: "Rn0lOkQMZX9Ok1zHu",
+			blockHeadless: true,
+			limitRate: {
+				id: "app",
+				throttle: 10000,
+			},
+		});
+
+		const formParams = {
+			firstName,
+			lastName,
+			email,
+			subject,
+			message,
+		};
+
+		emailjs.send("service_wb7vbok", "template_tqxwkl8", formParams).then(
+			(response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				loading = false;
+				success = true;
+				setTimeout(() => {
+					success = false;
+				}, 7000);
+
+				firstName = "";
+				lastName = "";
+				email = "";
+				subject = "";
+				message = "";
+			},
+			(error) => {
+				console.log("FAILED...", error);
+				loading = false;
+				fail = true;
+				setTimeout(() => {
+					fail = false;
+				}, 7000);
+			},
+		);
+	};
 </script>
 
 <section
@@ -43,24 +93,31 @@
 			respond to it as soon as I can!
 		</p>
 		<div class="message-links">
-			<a href="mailto:vicfatoyinbo@gmail.com"><img src={email} alt="email" /></a
-			>
-			<a href="https://wa.me/2348100715080"
-				><img src={whatsapp} alt="whatsapp" /></a
-			>
-			<a href="https://t.me/oluwatayo_x"
-				><img src={telegram} alt="telegram" /></a
-			>
+			<a href="mailto:vicfatoyinbo@gmail.com">
+				<img src={emailIcon} alt="email" />
+			</a>
+			<a href="https://wa.me/2348100715080">
+				<img src={whatsapp} alt="whatsapp" />
+			</a>
+			<a href="https://t.me/oluwatayo_x">
+				<img src={telegram} alt="telegram" />
+			</a>
 			<a href="https://twitter.com/messages/compose?recipient_id=3369832894">
-				<img src={twitter} alt="twitter" /></a
-			>
+				<img src={twitter} alt="twitter" />
+			</a>
 		</div>
 	</div>
 
 	<div class="section-content-half two">
-		<form class="contact-form">
+		<form class="contact-form" on:submit|preventDefault={submitForm}>
 			<div class="input-box">
-				<input type="text" class="contact-input" name="firstname" required />
+				<input
+					type="text"
+					class="contact-input"
+					name="firstname"
+					required
+					bind:value={firstName}
+				/>
 				<label for="firstname">First Name</label>
 			</div>
 			<div class="input-box">
@@ -69,6 +126,7 @@
 					class="contact-input"
 					name="lastname"
 					placeholder=" "
+					bind:value={lastName}
 					required
 				/>
 				<label for="lastname">Last Name</label>
@@ -79,12 +137,19 @@
 					class="contact-input"
 					name="email"
 					placeholder=" "
+					bind:value={email}
 					required
 				/>
 				<label for="email">Email</label>
 			</div>
 			<div class="input-box">
-				<input type="text" class="contact-input" name="subject" required />
+				<input
+					type="text"
+					class="contact-input"
+					name="subject"
+					bind:value={subject}
+					required
+				/>
 				<label for="subject">Subject</label>
 			</div>
 			<div class="input-box">
@@ -93,11 +158,23 @@
 					rows="10"
 					class="contact-input"
 					name="message"
+					bind:value={message}
 					required
 				/>
 				<label for="message">Message</label>
 			</div>
-			<button type="submit">Send Message</button>
+			<button type="submit" disabled={loading}>
+				<!-- {loading ? "Sending" : "Send Message"} -->
+				{#if loading}
+					Loading...
+				{:else if fail}
+					Failed to Send Message
+				{:else if success}
+					Message Sent Successfully!
+				{:else}
+					Send Message
+				{/if}
+			</button>
 		</form>
 	</div>
 </section>
@@ -207,7 +284,7 @@
 		color: $text;
 		outline: none;
 		font-size: 1rem;
-		font-family: "Bai";
+		font-family: "Bai Jamjuree";
 		&:valid ~ label,
 		&:focus ~ label {
 			color: $accent-dark;
@@ -229,7 +306,7 @@
 	}
 
 	button {
-		font-family: "Bai";
+		font-family: "Bai Jamjuree";
 		padding: 15px 10px;
 		border-radius: 5px;
 		background-color: $accent-dark;
