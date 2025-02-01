@@ -159,7 +159,7 @@
 					<p class="tech-used">ReactJS</p>
 				</span>
 				<a
-					href="https://https://www.darktanprop.com/"
+					href="https://www.darktanprop.com/"
 					target="_blank"
 					class="view-site"
 				>
