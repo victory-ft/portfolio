@@ -146,6 +146,26 @@
 					<img src={goArrow} alt="view site" />
 				</a>
 			</div>
+			<div class="project">
+				<img src="assets/images/darktan.png" alt="project" />
+				<h2 class="project-topic">Darktan Properties</h2>
+				<p class="project-description">
+					Developed the frontend of Darktan Properties. It is a property
+					management application for Landlords, Tenants and Realtors looking to
+					advertise.
+				</p>
+				<!-- The website is built with various features for students, supervisors, and the university. -->
+				<span class="tech-used-container">
+					<p class="tech-used">ReactJS</p>
+				</span>
+				<a
+					href="https://https://www.darktanprop.com/"
+					target="_blank"
+					class="view-site"
+				>
+					<img src={goArrow} alt="view site" />
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
