@@ -1,0 +1,29 @@
+@use "./colors" as color;
+
+* {
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	// outline: 2px solid green;
+
+	// &::selection {
+	// 	background: #c97b4e;
+	// }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: color.$bg-light;
+}
+
+.content {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	margin: 1rem 0 0;
+}
+
+footer {
+	min-height: 50px;
+	background: PapayaWhip;
+}
