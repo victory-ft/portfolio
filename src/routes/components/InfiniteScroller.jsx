@@ -1,14 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import typescript from "/public/logos/typescript.svg";
-import css from "/public/logos/css.svg";
-import flutter from "/public/logos/flutter.svg";
-import js from "/public/logos/js.svg";
-import nodejs from "/public/logos/node-js.svg";
-import react from "/public/logos/react.svg";
-import sass from "/public/logos/sass.svg";
-import svelte from "/public/logos/svelte.svg";
+import typescript from "/src/assets/logos/typescript.svg";
+import css from "/src/assets/logos/css.svg";
+import flutter from "/src/assets/logos/flutter.svg";
+import js from "/src/assets/logos/js.svg";
+import nodejs from "/src/assets/logos/node-js.svg";
+import react from "/src/assets/logos/react.svg";
+import sass from "/src/assets/logos/sass.svg";
+import svelte from "/src/assets/logos/svelte.svg";
 
 const InfiniteScroller = () => {
 	const logoData = [

@@ -24,9 +24,9 @@ const MainCard = () => {
 				<a href="http://" target="_blank" rel="noopener noreferrer">
 					<img src="/icons/instagram.svg" alt="instagram" />
 				</a>
-				<a href="http://" target="_blank" rel="noopener noreferrer">
+				{/* <a href="http://" target="_blank" rel="noopener noreferrer">
 					<img src="/icons/email.svg" alt="email" />
-				</a>
+				</a> */}
 			</div>
 		</div>
 	);

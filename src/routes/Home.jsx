@@ -24,15 +24,33 @@ const Home = ({ time }) => {
 			<Card>
 				<h1 className="card-header">Projects</h1>
 				<p className="card-text">Products I have worked on</p>
+				<div className="arrow-container bottom-arrow">
+					<img src="/icons/arrow.svg" alt="arrow" />
+				</div>
 			</Card>
 
 			<SpanCard>
 				<h1 className="card-header">About Me</h1>
+				<p className="card-text">
+					Passionate about crafting visually stunning and highly functional
+					digital experiences
+				</p>
+				<div className="arrow-container bottom-arrow">
+					<img src="/icons/arrow.svg" alt="arrow" />
+				</div>
 			</SpanCard>
 
 			<OneHalfSpanCard />
 
-			<Card className="contact-card">Contact Me</Card>
+			<Card className="contact-card">
+				<img src="/icons/sparkle.svg" alt="sparkle" className="sparkle-icon" />
+				<p className="card-text">Contact Me</p>
+				<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
+				<button className="mail-btn">
+					<img src="/icons/email.svg" alt="email" />
+					Send Email
+				</button>
+			</Card>
 
 			<EndCard />
 		</div>
