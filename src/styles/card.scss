@@ -1,0 +1,105 @@
+@use "./colors" as colors;
+
+.card {
+	background-color: colors.$card-light;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	min-height: 250px;
+	border: 2px solid colors.$border-light;
+}
+
+.card:before,
+.half-card::before {
+	content: "";
+	background-color: transparent;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+	background-repeat: repeat;
+	//   background-size: 182px;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.main-card {
+	grid-column: span 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.top-half-card {
+		display: flex;
+		justify-content: start;
+		align-items: end;
+		gap: 10px;
+
+		img {
+			border-radius: 15px;
+			// width: 30%;
+			height: 120px;
+			object-fit: contain;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		p {
+			margin: 10px 0 0;
+
+			span {
+				font-weight: 500;
+				color: colors.$text-muted-light;
+			}
+		}
+	}
+
+	.bottom-half-card {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 10px;
+		img {
+			width: 40px;
+			filter: invert(52%) sepia(36%) saturate(253%) hue-rotate(176deg)
+				brightness(89%) contrast(82%);
+		}
+	}
+}
+
+.main-card-header,
+.time {
+	font-family: "Lexend", sans-serif;
+	font-size: 1.5rem;
+	// color: colors.$text-muted-light;
+	color: colors.$text-light;
+	font-weight: 500;
+}
+
+.half-card-container {
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.half-card {
+	background-color: colors.$card-light;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid colors.$border-light;
+	flex: 1 1 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.time {
+		text-align: center;
+	}
+}

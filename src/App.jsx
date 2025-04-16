@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { useLocation, Routes, Route } from "react-router";
 import { AnimatePresence } from "framer-motion";
 import Home from "./routes/Home";
-import "./styles/main.scss";
 import About from "./routes/About";
+
+import "./styles/main.scss";
 
 function App() {
 	const location = useLocation();
@@ -15,7 +16,7 @@ function App() {
 				timeZone: "Africa/Lagos", // Lagos is in WAT
 				hour: "2-digit",
 				minute: "2-digit",
-				hour12: false,
+				hour12: true,
 			});
 			setTime(formatter.format(new Date()));
 		};
@@ -29,15 +30,15 @@ function App() {
 	const sharedProps = { time };
 
 	return (
-		<div className="content">
+		<>
 			<AnimatePresence>
 				<Routes location={location} key={location.pathname}>
-					<Route path="/" element={<Home />} />
+					<Route path="/" element={<Home {...sharedProps} />} />
 					<Route path="/about" element={<About />} />
 				</Routes>
 			</AnimatePresence>
-			<footer>Footer here</footer>
-		</div>
+			{/* <footer>Footer here</footer> */}
+		</>
 	);
 }
 
