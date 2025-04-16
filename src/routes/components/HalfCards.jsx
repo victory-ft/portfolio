@@ -22,8 +22,8 @@ const HalfCards = ({ time }) => {
 				<p className="time">{time} WAT</p>
 			</div>
 			<div className="half-card">
-				<div class="daynight">
-					<label for="checkbox">
+				<div className="daynight">
+					<label htmlFor="checkbox">
 						<input
 							type="checkbox"
 							name=""
@@ -31,11 +31,11 @@ const HalfCards = ({ time }) => {
 							checked={isDarkMode}
 							onChange={toggleDarkMode}
 						/>
-						<div class="toggle">
-							<div class="cloud"></div>
-							<div class="star"></div>
-							<div class="sea"></div>
-							<div class="mountains"></div>
+						<div className="toggle">
+							<div className="cloud"></div>
+							<div className="star"></div>
+							<div className="sea"></div>
+							<div className="mountains"></div>
 						</div>
 					</label>
 				</div>
