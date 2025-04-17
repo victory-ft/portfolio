@@ -2,21 +2,16 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 import MainCard from "../components/MainCard";
-import HalfCards from "../components/HalfCards";
 import InfiniteScroller from "../components/InfiniteScroller";
 import OneHalfSpanCard from "../components/OneHalfSpanCard";
 import EndCard from "../components/EndCard";
 
-import "../styles/home.scss";
-
-const Home = ({ time }) => {
+const Projects = () => {
 	const navigate = useNavigate();
 
 	return (
 		<div className="content">
 			<MainCard />
-
-			<HalfCards time={time} />
 
 			<div className="card">
 				<h1 className="main-card-header space-header">My Tech Stack</h1>
@@ -62,4 +57,4 @@ const Home = ({ time }) => {
 	);
 };
 
-export default Home;
+export default Projects;

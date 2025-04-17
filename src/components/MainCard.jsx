@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../styles/card.scss";
+import "../styles/card.scss";
 
 const MainCard = () => {
 	return (

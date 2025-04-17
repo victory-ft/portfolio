@@ -14,15 +14,14 @@
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	background-color: colors.$bg-light;
 	color: colors.$text-light;
-	max-width: 1200px;
 }
 
 .content {
-	margin: 20px;
+	margin: 20px auto;
 	padding: 20px;
 	border: 2px solid colors.$border-light;
 	border-radius: 40px;
@@ -30,6 +29,7 @@ body {
 	grid-template-columns: repeat(8, minmax(50px, 1fr));
 	gap: 12px;
 	box-sizing: border-box;
+	max-width: 1300px;
 }
 
 footer {

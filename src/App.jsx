@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 
 import "./styles/main.scss";
+import Projects from "./routes/Projects";
 
 function App() {
 	const location = useLocation();
@@ -31,10 +32,11 @@ function App() {
 
 	return (
 		<>
-			<AnimatePresence>
+			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home {...sharedProps} />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/projects" element={<Projects />} />
 				</Routes>
 			</AnimatePresence>
 			{/* <footer>Footer here</footer> */}
