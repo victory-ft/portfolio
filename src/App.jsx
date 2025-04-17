@@ -6,6 +6,7 @@ import About from "./routes/About";
 
 import "./styles/main.scss";
 import Projects from "./routes/Projects";
+import PageTransition from "./components/PageTransition";
 
 function App() {
 	const location = useLocation();
@@ -35,8 +36,22 @@ function App() {
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home {...sharedProps} />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/projects" element={<Projects />} />
+					<Route
+						path="/about"
+						element={
+							<PageTransition>
+								<About />
+							</PageTransition>
+						}
+					/>
+					<Route
+						path="/projects"
+						element={
+							<PageTransition>
+								<Projects />
+							</PageTransition>
+						}
+					/>
 				</Routes>
 			</AnimatePresence>
 			{/* <footer>Footer here</footer> */}

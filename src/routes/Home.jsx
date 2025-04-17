@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 import MainCard from "../components/MainCard";
@@ -12,6 +12,10 @@ import "../styles/home.scss";
 const Home = ({ time }) => {
 	const navigate = useNavigate();
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="content">
 			<MainCard />
@@ -23,29 +27,31 @@ const Home = ({ time }) => {
 				<InfiniteScroller />
 			</div>
 
-			<div className="card clickable" onClick={() => navigate("/projects")}>
-				<h1 className="card-header">Projects</h1>
-				<p className="card-text">Products I have worked on</p>
-				<div className="arrow-container bottom-arrow">
-					<img src="/icons/arrow.svg" alt="arrow" />
-				</div>
-			</div>
+			<button className="card clickable" onClick={() => navigate("/projects")}>
+				<span>
+					<h1 className="card-header">Projects</h1>
+					<p className="card-text">Products I have worked on</p>
+					<div className="arrow-container bottom-arrow">
+						<img src="/icons/arrow.svg" alt="arrow" />
+					</div>
+				</span>
+			</button>
 
-			<div
+			<button
 				className="card span-card clickable"
 				onClick={() => navigate("/about")}
 			>
-				<h1 className="card-header">About Me</h1>
-				<p className="card-text">
-					Passionate about crafting visually stunning and highly functional
-					digital experiences
-				</p>
-				<div className="arrow-container bottom-arrow">
-					<img src="/icons/arrow.svg" alt="arrow" />
-				</div>
-			</div>
-
-			<OneHalfSpanCard />
+				<span>
+					<h1 className="card-header">About Me</h1>
+					<p className="card-text">
+						Passionate about crafting visually stunning and highly functional
+						digital experiences
+					</p>
+					<div className="arrow-container bottom-arrow">
+						<img src="/icons/arrow.svg" alt="arrow" />
+					</div>
+				</span>
+			</button>
 
 			<div className="card contact-card">
 				<img src="/icons/sparkle.svg" alt="sparkle" className="sparkle-icon" />
@@ -56,6 +62,18 @@ const Home = ({ time }) => {
 					Send Email
 				</button>
 			</div>
+
+			<button className="card clickable">
+				<span>
+					<h1 className="card-header">Resume</h1>
+					<p className="card-text">My Qualifications & Experience</p>
+					<div className="arrow-container bottom-arrow">
+						<img src="/icons/arrow.svg" alt="arrow" />
+					</div>
+				</span>
+			</button>
+
+			{/* <OneHalfSpanCard /> */}
 
 			<EndCard />
 		</div>
