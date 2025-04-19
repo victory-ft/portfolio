@@ -44,14 +44,7 @@ function App() {
 							</PageTransition>
 						}
 					/>
-					<Route
-						path="/projects"
-						element={
-							<PageTransition>
-								<Projects />
-							</PageTransition>
-						}
-					/>
+					<Route path="/projects" element={<Projects />} />
 				</Routes>
 			</AnimatePresence>
 			{/* <footer>Footer here</footer> */}

@@ -1,0 +1,208 @@
+@use "./colors" as colors;
+
+.about-grid {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(50px, 1fr));
+	gap: 12px;
+	box-sizing: border-box;
+	max-width: 1100px;
+	margin: 20px auto;
+	width: 100%;
+}
+
+.about-card {
+	background-color: colors.$card-light;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	min-height: 250px;
+	border: 1px solid colors.$border-light;
+	z-index: 99;
+
+	&::before {
+		content: "";
+		background-color: transparent;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+		background-repeat: repeat;
+		//   background-size: 182px;
+		opacity: 0.2;
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.who-am-i-card {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.hobbies-card {
+	grid-column: span 2;
+}
+
+.card.about-stack {
+	grid-column: span 1;
+}
+
+.who-header {
+	font-size: 1.8rem;
+	margin: 5px 0;
+}
+
+.about-text {
+	font-size: 1.12rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+/* Add these styles to your about.scss file */
+
+.hobbies-card {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+}
+
+.content-swiper-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+.swiper-viewport {
+	width: 100%;
+	overflow: hidden;
+	flex-grow: 1;
+	position: relative;
+}
+
+.swiper-track {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	cursor: grab;
+	&:active {
+		cursor: grabbing;
+	}
+}
+
+.swiper-slide {
+	min-width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-card {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 10px;
+	padding: 1.25rem;
+	width: 92%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.content-icon {
+	width: 28px;
+	height: 28px;
+	margin-right: 0.75rem;
+}
+
+.content-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.content-body {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.section-content {
+	p {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		padding-left: 1.25rem;
+		margin-top: 0.5rem;
+
+		li {
+			margin-bottom: 0.5rem;
+			line-height: 1.4;
+		}
+	}
+}
+
+.swiper-dots {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.swiper-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.swiper-dot.active {
+	background-color: white;
+	transform: scale(1.2);
+}
+
+/* Optional navigation buttons */
+.nav-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 0.7;
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.prev-button {
+	left: 8px;
+}
+.next-button {
+	right: 8px;
+}

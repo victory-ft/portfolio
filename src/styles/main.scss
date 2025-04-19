@@ -20,16 +20,21 @@ body {
 	color: colors.$text-light;
 }
 
-.content {
-	margin: 20px auto;
-	padding: 20px;
+.main-border {
 	border: 2px solid colors.$border-light;
 	border-radius: 40px;
+	margin: 20px auto;
+	max-width: 1300px;
+	width: 100%;
+}
+
+.content {
+	padding: 20px;
 	display: grid;
 	grid-template-columns: repeat(8, minmax(50px, 1fr));
 	gap: 12px;
 	box-sizing: border-box;
-	max-width: 1300px;
+	width: 100%;
 }
 
 footer {
