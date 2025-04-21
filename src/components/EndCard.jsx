@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router";
 
 const EndCard = () => {
 	return (
 		<div className="end-card-container">
-			<button className="end-card end-card-one clickable">
+			<Link to="" className="end-card end-card-one clickable">
 				<span>
 					<h1 className="main-card-header">Blog</h1>
 					<p className="main-card-sub">
@@ -13,9 +14,9 @@ const EndCard = () => {
 						<img src="/icons/arrow.svg" alt="arrow" />
 					</div>
 				</span>
-			</button>
+			</Link>
 			<div className="end-card end-card-two">
-				<footer>&copy; 2025 · Created with ♥️ by Victory.</footer>
+				<footer>&copy; 2025 · Created with ♥️ by Victory</footer>
 			</div>
 		</div>
 	);

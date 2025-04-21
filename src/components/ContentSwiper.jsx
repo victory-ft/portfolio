@@ -15,16 +15,11 @@ const ContentSwiper = () => {
 			icon: "/icons/code.svg", // Replace with your actual icon path
 			content: (
 				<div className="section-content">
-					<p>
-						I specialize in creating elegant, user-focused solutions with clean,
-						maintainable code.
-					</p>
-					<ul>
-						<li>Frontend development with React and modern JavaScript</li>
-						<li>Responsive UI/UX design implementation</li>
-						<li>Cross-platform app development with Flutter</li>
-						<li>Problem-solving and technical architecture</li>
-					</ul>
+					I specialize in creating elegant, user-focused solutions with clean,
+					maintainable code, leveraging my skills in frontend development with
+					React and modern JavaScript, responsive UI/UX design, cross-platform
+					app development using Flutter, and strong problem-solving with a focus
+					on technical architecture.
 				</div>
 			),
 		},
@@ -33,32 +28,9 @@ const ContentSwiper = () => {
 			icon: "/icons/hobbies.svg", // Replace with your actual icon path
 			content: (
 				<div className="section-content">
-					<p>When I'm not coding, you can find me:</p>
-					<ul>
-						<li>Reading fiction and exploring new worlds</li>
-						<li>Playing or watching football</li>
-						<li>Gaming - especially story-driven adventures</li>
-						<li>Rewatching my favorite shows for the 100th time</li>
-					</ul>
-				</div>
-			),
-		},
-		{
-			title: "Fun Facts",
-			icon: "/icons/lightbulb.svg", // Replace with your actual icon path
-			content: (
-				<div className="section-content">
-					<p>A few things about me that might surprise you:</p>
-					<ul>
-						<li>I built my first website at age 13</li>
-						<li>
-							I can recite dialogue from entire episodes of my favorite shows
-						</li>
-						<li>
-							I once stayed up 36 hours straight to finish a coding project
-						</li>
-						<li>I collect vintage programming books</li>
-					</ul>
+					When I'm not coding, you can find me reading novels, playing or
+					watching football, diving into story-driven games, or rewatching my
+					favourite shows for the hundredth time.
 				</div>
 			),
 		},
@@ -115,7 +87,7 @@ const ContentSwiper = () => {
 	};
 
 	return (
-		<div className="content-swiper-container">
+		<div>
 			<div className="swiper-viewport" ref={swiperRef}>
 				<motion.div
 					className="swiper-track"
@@ -133,12 +105,9 @@ const ContentSwiper = () => {
 						<div className="swiper-slide" key={index}>
 							<div className="content-card">
 								<div className="content-header">
-									{section.icon && (
-										<img src={section.icon} alt="" className="content-icon" />
-									)}
-									<h2 className="content-title">{section.title}</h2>
+									<h2 className="project-sub-header">{section.title}</h2>
 								</div>
-								<div className="content-body">{section.content}</div>
+								<div className="about-text">{section.content}</div>
 							</div>
 						</div>
 					))}

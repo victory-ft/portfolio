@@ -7,6 +7,7 @@ import About from "./routes/About";
 import "./styles/main.scss";
 import Projects from "./routes/Projects";
 import PageTransition from "./components/PageTransition";
+import Darktan from "./routes/Darktan";
 
 function App() {
 	const location = useLocation();
@@ -45,6 +46,7 @@ function App() {
 						}
 					/>
 					<Route path="/projects" element={<Projects />} />
+					<Route path="/projects/darktan" element={<Darktan />} />
 				</Routes>
 			</AnimatePresence>
 			{/* <footer>Footer here</footer> */}

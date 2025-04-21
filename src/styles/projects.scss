@@ -58,6 +58,7 @@
 	text-align: left;
 	display: grid;
 	align-items: start;
+	text-decoration: none;
 
 	&:hover {
 		.project-img {
@@ -102,4 +103,52 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	color: colors.$text-muted-light;
+
+	&.details {
+		// margin: 5px 0;
+	}
+}
+
+.project-container {
+	width: 100%;
+	padding: 20px;
+}
+
+.project-details {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	gap: 20px;
+}
+
+.details-header-container {
+	margin-top: 50px;
+
+	.project-details-header {
+		font-weight: 400;
+		font-size: 1.8rem;
+	}
+
+	.project-sub-header {
+		font-size: 1.2rem;
+	}
+}
+
+.project-details-card {
+	background-color: colors.$card-light;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	min-height: 250px;
+	border: 1px solid colors.$border-light;
+	z-index: 99;
+
+	&.project-details-one {
+		flex: 1;
+	}
+
+	&.project-details-two {
+		flex: 2;
+	}
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router";
+import { Link } from "react-router";
 
 import MainCard from "../components/MainCard";
 import HalfCards from "../components/HalfCards";
@@ -10,8 +10,6 @@ import PageTransition from "../components/PageTransition";
 import "../styles/home.scss";
 
 const Home = ({ time }) => {
-	const navigate = useNavigate();
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -29,10 +27,7 @@ const Home = ({ time }) => {
 						<InfiniteScroller />
 					</div>
 
-					<button
-						className="card clickable"
-						onClick={() => navigate("/projects")}
-					>
+					<Link to="/projects" className="card clickable">
 						<span>
 							<h1 className="card-header">Projects</h1>
 							<p className="card-text">Products I have worked on</p>
@@ -40,12 +35,9 @@ const Home = ({ time }) => {
 								<img src="/icons/arrow.svg" alt="arrow" />
 							</div>
 						</span>
-					</button>
+					</Link>
 
-					<button
-						className="card span-card clickable"
-						onClick={() => navigate("/about")}
-					>
+					<Link to="/about" className="card span-card clickable">
 						<span>
 							<h1 className="card-header">About Me</h1>
 							<p className="card-text">
@@ -56,7 +48,7 @@ const Home = ({ time }) => {
 								<img src="/icons/arrow.svg" alt="arrow" />
 							</div>
 						</span>
-					</button>
+					</Link>
 
 					<div className="card contact-card">
 						<img
@@ -66,13 +58,13 @@ const Home = ({ time }) => {
 						/>
 						<p className="card-text">Contact Me</p>
 						<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
-						<button className="mail-btn">
+						<a href="" className="mail-btn">
 							<img src="/icons/email.svg" alt="email" />
 							Send Email
-						</button>
+						</a>
 					</div>
 
-					<button className="card clickable">
+					<Link to="" className="card clickable">
 						<span>
 							<h1 className="card-header">Resume</h1>
 							<p className="card-text">My Qualifications & Experience</p>
@@ -80,9 +72,7 @@ const Home = ({ time }) => {
 								<img src="/icons/arrow.svg" alt="arrow" />
 							</div>
 						</span>
-					</button>
-
-					{/* <OneHalfSpanCard /> */}
+					</Link>
 
 					<EndCard />
 				</div>

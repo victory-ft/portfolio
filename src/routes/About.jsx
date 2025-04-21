@@ -11,7 +11,11 @@ const About = () => {
 	return (
 		<div className="main-border">
 			<div className="close-container">
-				<button className="close-button" onClick={() => navigate(-1)}>
+				<button
+					className="close-button"
+					onClick={() => navigate(-1)}
+					aria-label="Close"
+				>
 					<img src="/icons/x.svg" alt="close" />
 				</button>
 			</div>
@@ -42,7 +46,14 @@ const About = () => {
 					<h1 className="main-card-header space-header">My Tech Stack</h1>
 					<InfiniteScroller />
 				</div>
-				<div className="about-contact-card about-card"></div>
+				<div className="about-contact-card about-card">
+					<p className="card-text">Contact Me</p>
+					<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
+					<button className="mail-btn">
+						<img src="/icons/email.svg" alt="email" />
+						Send Email
+					</button>
+				</div>
 			</div>
 		</div>
 	);

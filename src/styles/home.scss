@@ -212,8 +212,11 @@
 }
 
 .mail-btn {
+	text-decoration: none;
+	color: colors.$text-light;
 	margin-top: 10px;
 	width: 200px;
+	height: fit-content;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 import PageTransition from "../components/PageTransition";
 
@@ -17,13 +17,17 @@ const Projects = () => {
 			<PageTransition>
 				<div className="projects-container">
 					<div className="close-container">
-						<button className="close-button" onClick={() => navigate(-1)}>
+						<button
+							className="close-button"
+							onClick={() => navigate(-1)}
+							aria-label="Close"
+						>
 							<img src="/icons/x.svg" alt="close" />
 						</button>
 					</div>
 
 					<div className="projects">
-						<button className="project">
+						<Link to="/projects/darktan" className="project">
 							<span>
 								<div className="project-img-container project-img-1">
 									<img
@@ -40,8 +44,8 @@ const Projects = () => {
 									<p className="project-sub-header">Web App</p>
 								</div>
 							</span>
-						</button>
-						<button className="project">
+						</Link>
+						<Link to="" className="project">
 							<span>
 								<div className="project-img-container project-img-2">
 									<img
@@ -57,8 +61,8 @@ const Projects = () => {
 									<p className="project-sub-header">Website</p>
 								</div>
 							</span>
-						</button>
-						<button className="project">
+						</Link>
+						<Link to="" className="project">
 							<span>
 								<div className="project-img-container project-img-3">
 									<img
@@ -72,7 +76,7 @@ const Projects = () => {
 									<p className="project-sub-header">Web App</p>
 								</div>
 							</span>
-						</button>
+						</Link>
 					</div>
 				</div>
 			</PageTransition>
