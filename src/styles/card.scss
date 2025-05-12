@@ -215,6 +215,7 @@ button.end-card {
 .clickable {
 	text-decoration: none;
 	transition: box-shadow 0.2s ease-in-out;
+	color: colors.$text-light;
 
 	&:hover {
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -243,6 +244,17 @@ button.end-card {
 	&.small {
 		width: 40px;
 		height: 40px;
+	}
+
+	&.arrow-with-text {
+		display: flex;
+		align-items: center;
+		width: fit-content;
+		padding: 10px 20px;
+		gap: 10px;
+		p {
+			white-space: nowrap;
+		}
 	}
 
 	img {

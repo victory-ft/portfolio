@@ -119,6 +119,7 @@
 	align-items: stretch;
 	justify-content: center;
 	gap: 20px;
+	margin-bottom: 20px;
 }
 
 .details-header-container {
@@ -150,5 +151,21 @@
 
 	&.project-details-two {
 		flex: 2;
+	}
+}
+
+.project-details-image {
+	// margin-top: 20px;
+	width: fit-content;
+	margin: 40px auto 0;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		// margin: 20px 0;
+		width: 100%;
+		border-radius: 20px;
+		max-width: 1000px;
+		object-fit: cover;
 	}
 }

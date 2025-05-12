@@ -8,6 +8,8 @@ import "./styles/main.scss";
 import Projects from "./routes/Projects";
 import PageTransition from "./components/PageTransition";
 import Darktan from "./routes/Darktan";
+import { Kangol } from "./routes/Kangol";
+import { Otmovies } from "./routes/Otmovies";
 
 function App() {
 	const location = useLocation();
@@ -47,6 +49,8 @@ function App() {
 					/>
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/projects/darktan" element={<Darktan />} />
+					<Route path="/projects/kangol" element={<Kangol />} />
+					<Route path="/projects/otmovies" element={<Otmovies />} />
 				</Routes>
 			</AnimatePresence>
 			{/* <footer>Footer here</footer> */}

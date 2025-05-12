@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PageTransition from "../components/PageTransition";
 import { useNavigate } from "react-router";
 
-const Darktan = () => {
+export const Kangol = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -24,46 +24,49 @@ const Darktan = () => {
 					<div className="details-header-container">
 						<div className="project-text">
 							<h2 className="main-card-header project-details-header">
-								Darktan Properties
+								Kangol Store Redesign
 							</h2>
-							<p className="project-sub-header">Web App</p>
+							<p className="project-sub-header">Website</p>
 						</div>
 					</div>
 					<div className="project-details">
 						<div className="project-details-card project-details-one">
 							<p className="project-sub-header details">Company</p>
-							<p className="about-text">Darktan Properties Solutions</p>
+							<p className="about-text">Personal Project</p>
 
 							<p className="project-sub-header details">My Role</p>
-							<p className="about-text">Front-End Developer</p>
+							<p className="about-text">Fullstack Developer</p>
 
 							<p className="project-sub-header details">Tools</p>
-							<p className="about-text tools">React</p>
-							<p className="about-text tools">Axios</p>
+							<p className="about-text tools">NextJS</p>
+							<p className="about-text tools">MongoDB</p>
 							<p className="about-text tools">Sass</p>
 							<p className="about-text tools">Vercel</p>
 
 							<p className="project-sub-header details">Timeline</p>
-							<p className="about-text">March 2024 - October 2024</p>
+							<p className="about-text">December 2023</p>
 						</div>
 						<div className="project-details-card project-details-two">
 							<p className="project-sub-header details">Overview</p>
 							<p className="about-text">
-								An all-in-one website for landlords and tenants to simplify
-								property management.
+								Demonstrative redesign of the Kangol online store, developed
+								using Next.js and MongoDB.
 							</p>
 							<p className="project-sub-header details">Description</p>
 							<p className="about-text">
-								Darktan Property Solutions is a comprehensive digital platform
-								that streamlines property management for landlords, tenants, and
-								real estate professionals through intuitive, user-focused tools.
-								The application combines multi-property dashboards, simplified
-								payment systems, document sharing, and listing optimization
-								capabilities to transform traditional property management into
-								an efficient, modern experience.
+								This personal project is a demonstrative redesign of the Kangol
+								e-commerce website, built to showcase my skills in modern web
+								development. Leveraging the Next.js framework for both frontend
+								rendering and backend API routes, alongside MongoDB as the
+								database for managing product data and potentially user
+								information, the project demonstrates the implementation of a
+								visually updated and functionally improved online shopping
+								experience. It serves as a portfolio piece highlighting my
+								ability to develop full-stack applications focused on user
+								interfaces and data management.
 							</p>
 							<a
-								href="https://www.darktanprop.com/"
+								href="https://kangol-store.vercel.app"
 								className="clickable"
 								target="_blank"
 							>
@@ -72,16 +75,17 @@ const Darktan = () => {
 									<img src="/icons/arrow.svg" alt="arrow" />
 								</div>
 							</a>
+							<br />
+							<br />
+							<br />
 						</div>
 					</div>
 					<div className="project-details-image">
-						<img src="/images/darktan-2-min.jpg" alt="darktan" />
-						<img src="/images/darktan-min.png" alt="darktan" />
+						<img src="/images/kangol-2-min.jpg" alt="darktan" />
+						<img src="/images/kangol-min.png" alt="darktan" />
 					</div>
 				</div>
 			</PageTransition>
 		</div>
 	);
 };
-
-export default Darktan;

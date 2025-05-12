@@ -45,7 +45,7 @@ const Projects = () => {
 								</div>
 							</span>
 						</Link>
-						<Link to="" className="project">
+						<Link to="/projects/kangol" className="project">
 							<span>
 								<div className="project-img-container project-img-2">
 									<img
@@ -62,7 +62,7 @@ const Projects = () => {
 								</div>
 							</span>
 						</Link>
-						<Link to="" className="project">
+						<Link to="/projects/otmovies" className="project">
 							<span>
 								<div className="project-img-container project-img-3">
 									<img
