@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 
 const HalfCards = ({ time }) => {
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isDarkMode, setIsDarkMode] = useState(() => {
+		const savedMode = localStorage.getItem("darkMode");
+		return savedMode ? JSON.parse(savedMode) : false;
+	});
 
 	useEffect(() => {
 		if (isDarkMode) {
@@ -9,11 +12,12 @@ const HalfCards = ({ time }) => {
 		} else {
 			document.body.classList.remove("dark");
 		}
+
+		localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
 	}, [isDarkMode]);
 
-	// Toggle the dark mode state
 	const toggleDarkMode = () => {
-		setIsDarkMode(!isDarkMode);
+		setIsDarkMode((prev) => !prev);
 	};
 
 	return (

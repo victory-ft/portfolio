@@ -16,9 +16,26 @@ function App() {
 	const [time, setTime] = useState("");
 
 	useEffect(() => {
+		if (localStorage.getItem("darkMode") === null) {
+			const prefersDark = window.matchMedia(
+				"(prefers-color-scheme: dark)",
+			).matches;
+			if (prefersDark) {
+				document.body.classList.add("dark");
+				localStorage.setItem("darkMode", "true");
+			}
+		} else {
+			const isDarkMode = JSON.parse(localStorage.getItem("darkMode"));
+			if (isDarkMode) {
+				document.body.classList.add("dark");
+			}
+		}
+	}, []);
+
+	useEffect(() => {
 		const updateTime = () => {
 			const formatter = new Intl.DateTimeFormat("en-US", {
-				timeZone: "Africa/Lagos", // Lagos is in WAT
+				timeZone: "Africa/Lagos",
 				hour: "2-digit",
 				minute: "2-digit",
 				hour12: true,
@@ -26,10 +43,10 @@ function App() {
 			setTime(formatter.format(new Date()));
 		};
 
-		updateTime(); // Call initially
-		const interval = setInterval(updateTime, 1000); // Update every second
+		updateTime();
+		const interval = setInterval(updateTime, 1000);
 
-		return () => clearInterval(interval); // Cleanup on unmount
+		return () => clearInterval(interval);
 	}, []);
 
 	const sharedProps = { time };
@@ -53,7 +70,6 @@ function App() {
 					<Route path="/projects/otmovies" element={<Otmovies />} />
 				</Routes>
 			</AnimatePresence>
-			{/* <footer>Footer here</footer> */}
 		</>
 	);
 }
