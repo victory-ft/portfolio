@@ -213,7 +213,7 @@
 
 .mail-btn {
 	text-decoration: none;
-	color: colors.$text-light;
+	color: var(--text-color);
 	margin-top: 10px;
 	width: 200px;
 	height: fit-content;
@@ -222,8 +222,8 @@
 	justify-content: center;
 	gap: 5px;
 	border-radius: 10px;
-	border: 2px solid colors.$border-light;
-	background-color: colors.$border-light;
+	border: 2px solid var(--border-color);
+	background-color: var(--border-color);
 	font-family: "Lexend", sans-serif;
 	font-size: 1rem;
 	img {
@@ -239,7 +239,7 @@
 	align-items: center;
 	gap: 2px;
 	border-radius: 20px;
-	background-color: colors.$border-light;
+	background-color: var(--border-color);
 	width: fit-content;
 	padding: 3px 10px;
 

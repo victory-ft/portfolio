@@ -3,6 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
+:root {
+	--bg-color: #{colors.$bg-light};
+	--card-color: #{colors.$card-light};
+	--border-color: #{colors.$border-light};
+	--text-color: #{colors.$text-light};
+	--text-muted-color: #{colors.$text-muted-light};
+}
+
+body.dark {
+	--bg-color: #{colors.$bg-dark};
+	--card-color: #{colors.$card-dark};
+	--border-color: #{colors.$border-dark};
+	--text-color: #{colors.$text-dark};
+	--text-muted-color: #{colors.$text-muted-dark};
+}
+
 * {
 	font-family: "Montserrat", sans-serif;
 	box-sizing: border-box;
@@ -16,14 +32,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: colors.$bg-light;
-	color: colors.$text-light;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	position: relative;
 	// color
 }
 
 .main-border {
-	border: 2px solid colors.$border-light;
+	border: 2px solid var(--border-color);
 	border-radius: 40px;
 	margin: 20px auto;
 	max-width: 1300px;

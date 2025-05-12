@@ -12,13 +12,13 @@
 }
 
 .about-card {
-	background-color: colors.$card-light;
+	background-color: var(--card-color);
 	border-radius: 20px;
 	padding: 20px;
 	position: relative;
 	overflow: hidden;
 	min-height: 250px;
-	border: 1px solid colors.$border-light;
+	border: 1px solid var(--border-color);
 	z-index: 99;
 
 	// &::before {
@@ -98,7 +98,7 @@
 }
 
 .content-card {
-	background-color: rgba(255, 255, 255, 0.05);
+	// background-color: rgba(255, 255, 255, 0.05);
 	border-radius: 10px;
 }
 
@@ -117,7 +117,7 @@
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background-color: colors.$border-light;
+	background-color: var(--border-color);
 	border: none;
 	padding: 0;
 	cursor: pointer;
@@ -125,7 +125,7 @@
 }
 
 .swiper-dot.active {
-	background-color: colors.$text-muted-light;
+	background-color: var(--text-muted-color);
 	transform: scale(1.2);
 }
 
