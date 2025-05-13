@@ -102,9 +102,6 @@
 	border-radius: 10px;
 }
 
-.section-content {
-}
-
 .swiper-dots {
 	display: flex;
 	justify-content: center;
@@ -137,5 +134,21 @@
 
 	p {
 		margin: 5px 0;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.about-grid {
+		grid-template-columns: repeat(2, minmax(50px, 1fr));
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.card.about-stack {
+		grid-column: span 2;
+	}
+
+	.about-contact-card {
+		grid-column: span 2;
 	}
 }

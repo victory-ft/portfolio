@@ -67,17 +67,14 @@ export const Otmovies = () => {
 								</p>
 								<a
 									href="https://ot-movies.vercel.app/"
-									className="clickable"
+									className="visit-btn"
 									target="_blank"
 								>
-									<div className="arrow-container arrow-with-text">
+									<div className="">
 										<p className="about-text">Visit Website</p>
 										<img src="/icons/arrow.svg" alt="arrow" />
 									</div>
 								</a>
-								<br />
-								<br />
-								<br />
 							</div>
 						</div>
 						<div className="project-details-image">

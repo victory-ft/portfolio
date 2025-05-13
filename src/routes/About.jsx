@@ -11,7 +11,6 @@ const About = () => {
 	const navigate = useNavigate();
 	return (
 		<div className="content-border">
-			{" "}
 			<div className="main-border">
 				<PageTransition>
 					<div className="close-container">

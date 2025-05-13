@@ -67,18 +67,15 @@ export const Kangol = () => {
 									focused on user interfaces and data management.
 								</p>
 								<a
-									href="https://kangol-store.vercel.app"
-									className="clickable"
+									href="https://kangol-store.vercel.app/"
+									className="visit-btn"
 									target="_blank"
 								>
-									<div className="arrow-container arrow-with-text">
+									<div className="">
 										<p className="about-text">Visit Website</p>
 										<img src="/icons/arrow.svg" alt="arrow" />
 									</div>
 								</a>
-								<br />
-								<br />
-								<br />
 							</div>
 						</div>
 						<div className="project-details-image">

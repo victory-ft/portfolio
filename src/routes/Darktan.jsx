@@ -63,12 +63,13 @@ const Darktan = () => {
 									optimization capabilities to transform traditional property
 									management into an efficient, modern experience.
 								</p>
+
 								<a
 									href="https://www.darktanprop.com/"
-									className="clickable"
+									className="visit-btn"
 									target="_blank"
 								>
-									<div className="arrow-container arrow-with-text">
+									<div className="">
 										<p className="about-text">Visit Website</p>
 										<img src="/icons/arrow.svg" alt="arrow" />
 									</div>
