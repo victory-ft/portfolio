@@ -38,6 +38,10 @@ body {
 	// color
 }
 
+.content-border {
+	margin: 0 20px;
+}
+
 .main-border {
 	border: 2px solid var(--border-color);
 	border-radius: 40px;
@@ -66,4 +70,16 @@ footer {
 
 button {
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+	.content {
+		grid-template-columns: repeat(2, minmax(50px, 1fr));
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.content-border {
+		margin: 0 10px;
+	}
 }

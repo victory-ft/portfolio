@@ -56,14 +56,7 @@ function App() {
 			<AnimatePresence mode="wait">
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home {...sharedProps} />} />
-					<Route
-						path="/about"
-						element={
-							<PageTransition>
-								<About />
-							</PageTransition>
-						}
-					/>
+					<Route path="/about" element={<About />} />
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/projects/darktan" element={<Darktan />} />
 					<Route path="/projects/kangol" element={<Kangol />} />

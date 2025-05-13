@@ -277,3 +277,45 @@ button.end-card {
 	right: 20px;
 	top: 20px;
 }
+
+@media only screen and (max-width: 900px) {
+	.main-card {
+		grid-column: span 2;
+	}
+
+	.half-card-container,
+	.one-card {
+		grid-column: span 1;
+	}
+
+	.span-card {
+		grid-column: span 2;
+	}
+
+	.one-half-span-card-container,
+	.end-card-container {
+		grid-column: span 2;
+	}
+
+	.end-card-container {
+		grid-column: span 2;
+	}
+
+	.contact-card {
+		grid-column: span 2;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.main-card {
+		.top-half-card {
+			flex-direction: column;
+			align-items: start;
+			margin-bottom: 10px;
+		}
+	}
+	.half-card-container,
+	.one-card {
+		grid-column: span 2;
+	}
+}

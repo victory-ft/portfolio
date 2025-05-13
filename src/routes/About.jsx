@@ -5,55 +5,62 @@ import InfiniteScroller from "../components/InfiniteScroller";
 import ContentSwiper from "../components/ContentSwiper"; // Updated import
 
 import "../styles/about.scss";
+import PageTransition from "../components/PageTransition";
 
 const About = () => {
 	const navigate = useNavigate();
 	return (
-		<div className="main-border">
-			<div className="close-container">
-				<button
-					className="close-button"
-					onClick={() => navigate(-1)}
-					aria-label="Close"
-				>
-					<img src="/icons/x.svg" alt="close" />
-				</button>
-			</div>
-			<div className="about-grid">
-				<div className="who-am-i-card about-card">
-					<h1 className="main-card-header who-header">Who am I?</h1>
-					<p className="project-sub-header">My Story</p>
-					<p className="about-text">
-						My journey into coding started back in secondary school when I built
-						websites for a game we used to play. That early experience sparked
-						my love for development, leading me to study Software Engineering at
-						university. For me, coding is all about the thrill of bringing ideas
-						to life—transforming concepts into functional and beautiful digital
-						experiences.
-					</p>
-					<p className="project-sub-header">What I Know</p>
-					<p className="about-text">
-						I build responsive websites and web apps using JavaScript, React,
-						and Svelte, crafting sleek, user-friendly interfaces that feel great
-						to use. On the app side, I work with Flutter to create fast,
-						cross-platform experiences for both desktop and mobile.
-					</p>
-				</div>
-				<div className="hobbies-card about-card">
-					<ContentSwiper />
-				</div>
-				<div className="card about-stack">
-					<h1 className="main-card-header space-header">My Tech Stack</h1>
-					<InfiniteScroller />
-				</div>
-				<div className="about-contact-card about-card">
-					<p className="card-text">Contact Me</p>
-					<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
-					<button className="mail-btn">
-						<img src="/icons/email.svg" alt="email" />
-						Send Email
-					</button>
-				</div>
+		<div className="content-border">
+			{" "}
+			<div className="main-border">
+				<PageTransition>
+					<div className="close-container">
+						<button
+							className="close-button"
+							onClick={() => navigate(-1)}
+							aria-label="Close"
+						>
+							<img src="/icons/x.svg" alt="close" />
+						</button>
+					</div>
+					<div className="about-grid">
+						<div className="who-am-i-card about-card">
+							<h1 className="main-card-header who-header">Who am I?</h1>
+							<p className="project-sub-header">My Story</p>
+							<p className="about-text">
+								My journey into coding started back in secondary school when I
+								built websites for a game we used to play. That early experience
+								sparked my love for development, leading me to study Software
+								Engineering at university. For me, coding is all about the
+								thrill of bringing ideas to life—transforming concepts into
+								functional and beautiful digital experiences.
+							</p>
+							<p className="project-sub-header">What I Know</p>
+							<p className="about-text">
+								I build responsive websites and web apps using JavaScript,
+								React, and Svelte, crafting sleek, user-friendly interfaces that
+								feel great to use. On the app side, I work with Flutter to
+								create fast, cross-platform experiences for both desktop and
+								mobile.
+							</p>
+						</div>
+						<div className="hobbies-card about-card">
+							<ContentSwiper />
+						</div>
+						<div className="card about-stack">
+							<h1 className="main-card-header space-header">My Tech Stack</h1>
+							<InfiniteScroller />
+						</div>
+						<div className="about-contact-card about-card">
+							<p className="card-text">Contact Me</p>
+							<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
+							<button className="mail-btn">
+								<img src="/icons/email.svg" alt="email" />
+								Send Email
+							</button>
+						</div>
+					</div>
+				</PageTransition>
 			</div>
 		</div>
 	);
