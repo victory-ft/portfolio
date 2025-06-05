@@ -15,14 +15,26 @@ const MainCard = () => {
 				</div>
 			</div>
 			<div className="bottom-half-card">
-				<a href="http://" target="_blank" rel="noopener noreferrer">
-					<img src="/icons/github.svg" alt="github" />
+				<a
+					href="https://github.com/victory-ft"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src="/icons/github.svg" alt="github" className="gh-icon" />
 				</a>
-				<a href="http://" target="_blank" rel="noopener noreferrer">
-					<img src="/icons/linkedin.svg" alt="linkedin" />
+				<a
+					href="https://www.linkedin.com/in/victory-ftyb/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src="/icons/linkedin.svg" alt="linkedin" className="lkd-icon" />
 				</a>
-				<a href="http://" target="_blank" rel="noopener noreferrer">
-					<img src="/icons/instagram.svg" alt="instagram" />
+				<a
+					href="https://www.instagram.com/victory.ft/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src="/icons/instagram.svg" alt="instagram" className="ig-icon" />
 				</a>
 				{/* <a href="http://" target="_blank" rel="noopener noreferrer">
 					<img src="/icons/email.svg" alt="email" />

@@ -59,7 +59,7 @@ const Home = ({ time }) => {
 							/>
 							<p className="card-text">Contact Me</p>
 							<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
-							<a href="" className="mail-btn">
+							<a href="mailto:vicfatoyinbo@gmail.com" className="mail-btn">
 								<img src="/icons/email.svg" alt="email" />
 								Send Email
 							</a>

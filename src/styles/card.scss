@@ -74,10 +74,27 @@ button.end-card {
 		justify-content: start;
 		align-items: center;
 		gap: 10px;
+
 		img {
 			width: 40px;
 			filter: invert(52%) sepia(36%) saturate(253%) hue-rotate(176deg)
 				brightness(89%) contrast(82%);
+			transition: filter 0.2s ease-in-out;
+
+			&:hover {
+				&.ig-icon {
+					filter: invert(26%) sepia(86%) saturate(1480%) hue-rotate(296deg)
+						brightness(92%) contrast(89%);
+				}
+				&.lkd-icon {
+					filter: invert(20%) sepia(78%) saturate(3499%) hue-rotate(186deg)
+						brightness(97%) contrast(101%);
+				}
+				&.gh-icon {
+					filter: invert(12%) sepia(24%) saturate(437%) hue-rotate(175deg)
+						brightness(96%) contrast(93%);
+				}
+			}
 		}
 	}
 }

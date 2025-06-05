@@ -53,7 +53,7 @@ const About = () => {
 						<div className="about-contact-card about-card">
 							<p className="card-text">Contact Me</p>
 							<p className="main-card-sub sub-2">Let's Make Magic Happen!</p>
-							<button className="mail-btn">
+							<button href="mailto:vicfatoyinbo@gmail.com" className="mail-btn">
 								<img src="/icons/email.svg" alt="email" />
 								Send Email
 							</button>
