@@ -65,7 +65,12 @@ const Home = ({ time }) => {
 							</a>
 						</div>
 
-						<Link to="" className="card clickable">
+						<a
+							href="/docs/Victory Fatoyinbo Resume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="card clickable"
+						>
 							<span>
 								<h1 className="card-header">Resume</h1>
 								<p className="card-text">My Qualifications & Experience</p>
@@ -73,7 +78,7 @@ const Home = ({ time }) => {
 									<img src="/icons/arrow.svg" alt="arrow" />
 								</div>
 							</span>
-						</Link>
+						</a>
 
 						<EndCard />
 					</div>
