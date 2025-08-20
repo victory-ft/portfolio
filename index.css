@@ -1,0 +1,141 @@
+:root {
+	--bg-color: #ffffff;
+	--text-color: #00000099;
+	--bold-text-color: #000000de;
+	--grey-text-color: #00000061;
+	--arrow-color: invert(0%) sepia(90%) saturate(7460%) hue-rotate(346deg)
+		brightness(89%) contrast(111%);
+	/* --accent-color: #007bff; */
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #121212;
+		--text-color: #ffffffb2;
+		--accent-color: #4dabf7;
+		--bold-text-color: #ffffff;
+		--grey-text-color: #ffffff80;
+		--arrow-color: invert(100%) sepia(99%) saturate(51%) hue-rotate(77deg)
+			brightness(109%) contrast(99%);
+	}
+} */
+
+* {
+	box-sizing: border-box;
+	font-family: "DM Sans", sans-serif;
+	/* outline: 2px solid green; */
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+	padding: 0;
+	/* min-height: 200vh; */
+}
+
+main {
+	max-width: 800px;
+	margin: 80px auto 10px;
+}
+
+p {
+	line-height: 24px;
+}
+
+p.bold {
+	font-weight: 500;
+	color: var(--bold-text-color);
+	font-size: 1.14rem;
+}
+
+.img-container {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 0;
+}
+
+.img-container img {
+	width: 100%;
+	border-radius: 400px;
+}
+
+.main-header {
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 16px 0;
+	color: var(--bold-text-color);
+}
+
+.underline-link {
+	color: var(--bold-text-color);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.938;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.underline-link img {
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+	filter: var(--arrow-color);
+}
+
+.underline-link.p2 img {
+	rotate: 45deg;
+}
+
+.spacer {
+	height: 100px;
+}
+
+.project-card {
+	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.timeline {
+	margin: 0;
+	line-height: 0.75rem;
+	color: var(--grey-text-color);
+}
+
+.project-link {
+	color: var(--bold-text-color);
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.14rem;
+	margin: 8px 0;
+	display: block;
+}
+
+.project-card .underline-link {
+	margin-top: 8px;
+}
+
+.project-card-text {
+	flex: 0 0 60%;
+	margin: 0;
+}
+
+.project-card-image-container {
+	flex: 0 0 40%;
+	height: 175px;
+	padding: 5px;
+	background-color: #8080800d;
+}
+
+.project-card-image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

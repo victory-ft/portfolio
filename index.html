@@ -1,16 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Victory Fatoyinbo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+
+    <title>Victory</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item active"><a href="#home">Victory Fatoyinbo</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="img-container">
+            <img src="assets/images/portrait.jpg" alt="portrait">
+        </div>
+
+        <h1 class="main-header">Hi, I'm Victory</h1>
+        <p>
+            A software engineer creating beautiful experiences. I build responsive websites and cross-platform mobile
+            apps using
+            modern technologies like React and Flutter. Focused on writing clean code that delivers seamless user
+            experiences across
+            all devices.
+        </p>
+
+        <a href="assets/docs/Victory Fatoyinbo Resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="underline-link">View CV <img src="assets/icons/arrow.svg" alt="arrow">
+        </a>
+
+        <div class="spacer"></div>
+
+        <p class="bold">Featured Projects</p>
+
+        <div class="project-card">
+            <div class="project-card-info">
+                <p class="timeline">2024</p>
+                <a href="#" class="project-link">Darktan Properties</a>
+                <p class="project-card-text">
+                    An all-in-one website for landlords and tenants to simplify property management.
+
+                </p>
+                <a href="#" class="underline-link">View
+                    Site <img src="assets/icons/arrow.svg" alt="arrow">
+                </a>
+
+            </div>
+            <div class="project-card-image-container">
+                <img src="assets/images/darktan-min.png" alt="darktan">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-card-info">
+                <p class="timeline">2023</p>
+                <a href="#" class="project-link">Kangol Store Redesign</a>
+                <p class="project-card-text">
+                    Demonstrative redesign of the Kangol online store, developed using Next.js and MongoDB.
+                </p>
+                <a href="#" class="underline-link">View
+                    Site <img src="assets/icons/arrow.svg" alt="arrow">
+                </a>
+
+            </div>
+            <div class="project-card-image-container">
+                <img src="assets/images/kangol-min.png" alt="kangol">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-card-info">
+                <p class="timeline">2024</p>
+                <a href="#" class="project-link">OTMovies</a>
+                <p class="project-card-text">
+                    A movie and TV series information application built with React and TypeScript, fetching data from
+                    the TMDB API.
+                </p>
+                <a href="#" class="underline-link">View
+                    Site <img src="assets/icons/arrow.svg" alt="arrow">
+                </a>
+
+            </div>
+            <div class="project-card-image-container">
+                <img src="assets/images/otmovies-min.png" alt="otmovies">
+            </div>
+        </div>
+
+        <a href="#" class="underline-link p2">View
+            all projects <img src="assets/icons/arrow.svg" alt="arrow">
+        </a>
+
+    </main>
 </body>
 
 </html>
