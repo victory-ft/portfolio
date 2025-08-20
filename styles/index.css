@@ -9,7 +9,7 @@
 	/* --accent-color: #007bff; */
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--bg-color: #121212;
 		--text-color: #ffffffb2;
@@ -20,7 +20,7 @@
 			brightness(109%) contrast(99%);
 		--navbar-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px;
 	}
-} */
+}
 
 * {
 	box-sizing: border-box;
