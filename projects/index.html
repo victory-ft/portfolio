@@ -26,16 +26,17 @@
 		/>
 	</head>
 
-	<body>
+	<body onload="document.body.style.opacity=`1`;">
+		<script>
+			document.body.style.opacity = `0`;
+		</script>
 		<header>
 			<nav>
 				<ul class="nav-items">
-					<li class="nav-item"><a href="/portfolio/">Victory Fatoyinbo</a></li>
-					<li class="nav-item active">
-						<a href="/portfolio/projects/">Projects</a>
-					</li>
-					<li class="nav-item"><a href="/portfolio/about/">About</a></li>
-					<li class="nav-item"><a href="/portfolio/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/">Victory Fatoyinbo</a></li>
+					<li class="nav-item active"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
 				</ul>
 			</nav>
 		</header>

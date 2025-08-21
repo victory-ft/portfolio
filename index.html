@@ -5,12 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- CSS -->
-		<style>
-			html {
-				visibility: hidden;
-				opacity: 0;
-			}
-		</style>
 		<link rel="stylesheet" href="styles/index.css" />
 		<link rel="stylesheet" href="styles/header.css" />
 		<link rel="stylesheet" href="styles/footer.css" />
@@ -29,16 +23,19 @@
 		<link rel="preload" href="assets/images/portrait.jpg" as="image" />
 	</head>
 
-	<body>
+	<body onload="document.body.style.opacity=`1`;">
+		<script>
+			document.body.style.opacity = `0`;
+		</script>
 		<header>
 			<nav>
 				<ul class="nav-items">
 					<li class="nav-item active">
-						<a href="/portfolio/">Victory Fatoyinbo</a>
+						<a href="/">Victory Fatoyinbo</a>
 					</li>
-					<li class="nav-item"><a href="/portfolio/projects/">Projects</a></li>
-					<li class="nav-item"><a href="/portfolio/about/">About</a></li>
-					<li class="nav-item"><a href="/portfolio/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/about/">About</a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
 				</ul>
 			</nav>
 		</header>
