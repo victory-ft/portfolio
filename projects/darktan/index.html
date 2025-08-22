@@ -51,11 +51,17 @@
 		</div>
 
 		<main class="project-main">
-			<a href="/projects/" class="back-link">
+			<a
+				href="/projects/"
+				class="back-link"
+				onclick="history.back(); return false;"
+			>
 				<img src="../../assets/icons/arrow.svg" alt="arrow" />
 				<p class="bold">Back</p>
 			</a>
+
 			<br />
+
 			<p class="bold project-bold">Overview</p>
 			<p class="project-text">
 				Darktan Property Solutions is a comprehensive web platform that
@@ -68,6 +74,7 @@
 				Property Solutions transforms traditional property management into a
 				more efficient, modern experience.
 			</p>
+
 			<div class="header-flex">
 				<a href="#" class="underline-link">
 					View Site
@@ -76,6 +83,8 @@
 			</div>
 
 			<br />
+			<br />
+
 			<div class="project-img-flex-item">
 				<img
 					src="../../assets/images/darktan/darktan-homescreen2.png"
@@ -84,6 +93,7 @@
 				/>
 				<p class="timeline project-img-desc">Landing screen</p>
 			</div>
+
 			<br />
 			<p class="bold project-bold">Role</p>
 			<p class="project-text">Frontend Developer</p>
@@ -213,5 +223,6 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+		<script src="../projects.js"></script>
 	</body>
 </html>

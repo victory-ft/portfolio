@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				delay: index * 0.2,
 				scrollTrigger: {
 					trigger: card,
-					start: "top 90%",
+					start: "top 85%",
 					end: "bottom 20%",
 					toggleActions: "play none none none",
 				},

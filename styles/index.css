@@ -339,4 +339,14 @@ main.project-main {
 		align-items: center;
 		/* flex-wrap: wrap; */
 	}
+
+	.project-card-image-container {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.project-card-image-container img {
+		width: 100%;
+		max-height: 15rem;
+	}
 }
